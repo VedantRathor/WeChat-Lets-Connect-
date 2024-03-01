@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="14sp"
+    tools:context=".ChatDashboard">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvchat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/textinputlayoutMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textinputlayoutMessage"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="5sp"
+
+        android:elevation="10sp"
+
+        android:hint="Message "
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+
+        app:boxBackgroundColor="#2AF3DDDD"
+        app:boxStrokeColor="#D0DF6174"
+        app:boxStrokeWidth="3dp"
+        app:counterTextColor="@color/white"
+        app:cursorColor="#FF0000"
+        app:hintTextAppearance="@color/white"
+        app:hintTextColor="#F6D4D4"
+         android:layout_marginStart="4sp"
+         android:layout_marginEnd="4sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSendMsg"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etMessageBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#D88B8B"
+            android:backgroundTintMode="multiply"
+            android:textColor="@color/black"
+
+            android:textSize="14sp"
+             />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSendMsg"
+        android:layout_width="79dp"
+        android:layout_height="65dp"
+        android:background="@drawable/btn_bg"
+        android:text="Send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="7sp"
+    app:cardCornerRadius="10sp"
+
+    app:cardBackgroundColor="@android:color/white"
+    android:layout_marginStart="10sp"
+    android:layout_marginEnd="10sp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tvReceiver"
+        android:padding="10sp"
+
+        android:text="adfa sd sad sd asd asd sdfhajkdfhaaufhadfadfadasdfasdf   adsf  adsf asd asd f asdf ads faiulefhjhalkdfjhaadfadfajdfhadfhadjkfhajkdfhajkdhfajkdhfjkaldhlfjkahsdlfjkahsljdkfhajklsdfhjlakdfhakjsdhfjkasdhfjkdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="300dp"
+        android:textSize="18dp"
+        android:background="@drawable/receiver_bg"
+        android:textAlignment="viewStart"
+        />
+</androidx.cardview.widget.CardView>
